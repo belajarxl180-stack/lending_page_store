@@ -1,3 +1,72 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.3);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px 10px rgba(0, 255, 255, 0.18);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.3);
+  }
+}
+.gallery-grid img:active {
+  animation: pulse 0.5s;
+}
+/* ===== ADVANCED NEON BUTTON ===== */
+.neon-btn {
+  padding: 15px 40px;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-right: 18px;
+  position: relative;
+  z-index: 1;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 0 20px rgba(0,0,0,0.12);
+}
+.neon-blue {
+  background: linear-gradient(90deg, #00f0ff 0%, #005eff 100%);
+  box-shadow:
+    0 0 10px #00f0ff,
+    0 0 20px #00f0ff,
+    0 0 40px #00f0ff,
+    0 0 80px #00f0ff;
+}
+.neon-blue:hover {
+  background: linear-gradient(90deg, #00f0ff 0%, #005eff 100%);
+  color: #222;
+  box-shadow:
+    0 0 20px #00f0ff,
+    0 0 40px #00f0ff,
+    0 0 80px #00f0ff,
+    0 0 120px #00f0ff;
+  transform: translateY(-3px);
+}
+.neon-pink {
+  background: linear-gradient(90deg, #ff00ea 0%, #ff005e 100%);
+  box-shadow:
+    0 0 10px #ff00ea,
+    0 0 20px #ff00ea,
+    0 0 40px #ff00ea,
+    0 0 80px #ff00ea;
+}
+.neon-pink:hover {
+  background: linear-gradient(90deg, #ff00ea 0%, #ff005e 100%);
+  color: #222;
+  box-shadow:
+    0 0 20px #ff00ea,
+    0 0 40px #ff00ea,
+    0 0 80px #ff00ea,
+    0 0 120px #ff00ea;
+  transform: translateY(-3px);
+}
 .feature-img-large {
   width: 100%;
   max-width: 180px;
